@@ -31,6 +31,14 @@
                             <form action="{{ route('admin.categories.store') }}" method="POST">
                                 @csrf
                                 <div class="form-group">
+                                  <label for="exampleFormControlSelect2">Pilih Parent</label>
+                                  <select class="form-control" name="parent_id" id="exampleFormControlSelect2">
+                                    @foreach($categories as $categorie)
+                                      <option value="{{ $categorie->id }}">{{ $categorie->name }}</option>
+                                    @endforeach
+                                  </select>
+                                </div>
+                                <div class="form-group">
                                 <label for="exampleInputUsername1">Nama Kategori</label>
                                 <input type="text" class="form-control" name="name">
                                 </div>

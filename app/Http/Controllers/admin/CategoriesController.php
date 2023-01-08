@@ -22,14 +22,18 @@ class CategoriesController extends Controller
     //function menampilkan view tambah data
     public function tambah()
     {
-        return view('admin.categories.tambah');
+        $categories = Categories::all();
+
+
+        return view('admin.categories.tambah', compact('categories'));
     }
 
     public function store(Request $request)
     {
         //Simpan datab ke database    
         Categories::updateOrCreate([
-            'name' => $request->name
+            'name' => $request->name,
+            'parent_id' => $request->parent_id
         ], []);
 
         //lalu reireact ke route admin.categories dengan mengirim flashdata(session) berhasil tambah data untuk manampilkan alert succes tambah data
