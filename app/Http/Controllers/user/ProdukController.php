@@ -19,7 +19,7 @@ class ProdukController extends Controller
             ->groupBy('categories.id')
             ->get();
 
-        return view('user.produk', [
+        return view('user2.produk', [
             'produks' => Product::paginate(9),
             'categories' => $kat
         ]);

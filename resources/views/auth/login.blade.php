@@ -6,17 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Purple Admin</title>
     <!-- plugins:css -->
-    <link rel="stylesheet" href="{{ asset('adminassets') }}/assets/vendors/mdi/css/materialdesignicons.min.css">
-    <link rel="stylesheet" href="{{ asset('adminassets') }}/assets/vendors/css/vendor.bundle.base.css">
+    <link rel="stylesheet" href="{{ asset('publci/adminassets') }}/assets/vendors/mdi/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="{{ asset('publci/adminassets') }}/assets/vendors/css/vendor.bundle.base.css">
     <!-- endinject -->
     <!-- Plugin css for this page -->
     <!-- End plugin css for this page -->
     <!-- inject:css -->
     <!-- endinject -->
     <!-- Layout styles -->
-    <link rel="stylesheet" href="{{ asset('adminassets') }}/assets/css/style.css">
+    <link rel="stylesheet" href="{{ asset('publci/adminassets') }}/assets/css/style.css">
     <!-- End layout styles -->
-    <link rel="shortcut icon" href="{{ asset('adminassets') }}/assets/images/favicon.png" />
+    <link rel="shortcut icon" href="{{ asset('publci/adminassets') }}/assets/images/favicon.png" />
   </head>
   <body>
     <div class="container-scroller">

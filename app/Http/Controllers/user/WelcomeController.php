@@ -16,7 +16,8 @@ class WelcomeController extends Controller
         $data = array(
             'produks' => DB::table('products')->limit(10)->get(),
         );
-        return view('user.welcome', $data);
+        // return view('user.welcome', $data);
+        return view('user2.welcome', $data);
     }
 
     public function kontak()
